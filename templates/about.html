@@ -1,0 +1,42 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+        <div class="content">
+            <h2>About</h2>
+            <h3>Keycord is a simple way to prove you own a Discord account cryptographically.</h3>
+            <p>Users prove they own Discord accounts by posting cryptographic proof in our public Discord server that Keybase can use to link your account.</p>
+            <h3>Who runs this?</h3>
+            <p>As of now it's just me. You can find my Keybase account at <a href="https://keybase.io/cr3atable">https://keybase.io/cr3atable</a>.</p>
+            <h3>I don't trust you. How do I verify people manually?</h3>
+            <p>You can join the public Keycord Discord server at <a href="https://discord.gg/gfczwmb">https://discord.gg/gfczwmb</a>.</p>
+            <p>Here's a signed message by <a href="https://keybase.io/cr3atable">me</a> that proves this is our Discord link:</p>
+            <textarea class="textarea" onclick="this.focus(); this.select(); document.execCommand('copy');" readonly="readonly" style="height: 408px;">
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+The link to the Keycord Discord server is: https://discord.gg/gfczwmb
+-----BEGIN PGP SIGNATURE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+wsBcBAABCgAGBQJeB6MvAAoJELYkWZ9RrPVOc/YH/RQcam0+IMXIYLCxj7mK3WK5
+dQjwB/2MC8EfXdCJ5KE7DN4YFZ65D7gextvC9Z3mvgfLHXACXE9UyVQV9b182vh/
+brH/CoCEjSh+aBUkhVVpjydlnjuTyrUmuEQPMxI6xRZjdlhhCUy3g7jD5XO9yYmF
+YPxvxWOOlJ1kS6OgYOz/ZLAcIFvPbu4kE8UEgThyNxZ7gI+okzKxi7HWXl6JpP+u
+ACngrGL5U3fJoLPEJ8sjn8bJoo3p4cnq1LW7+UsPsi5GxzAIx41a/3FgtoQ4Urek
+R/erD43ds1CppUJgEtyGeM3/DRPkak8ccnT/ZFv7JnfXx57VpI+/TxiOpLG3PM8=
+=+bBc
+-----END PGP SIGNATURE-----                    
+            </textarea>
+            <h3>Are you or Keycord affiliated with Discord or Keybase?</h3>
+            <p>Keycord is not affiliated with Keybase or Discord, and neither am I.</p>
+        </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

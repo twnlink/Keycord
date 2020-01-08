@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+        <h3 class="title">
+            Paste the following message in the #verify channel in the Keycord Discord server to verify your account:
+        </h3>
+        <textarea class="textarea" onclick="this.focus(); this.select(); document.execCommand('copy');" readonly="readonly">{{ proof }}</textarea>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "domain": "localhost",
+  "display_name": "Keycord",
+
+  "username": {
+    "re": "[0-9]{18}",
+    "min": 1,
+    "max": 18
+  },
+
+  "brand_color": "#7289DA",
+
+  "logo": {
+    "svg_black": "https://beeactivists.com/small-black-logo.svg",
+    "svg_full": "https://beeactivists.com/full-color.logo.svg",
+    "svg_white": "https://beeactivists.com/small-white-logo.svg"
+  },
+
+  "description": "A simple way to link your Discord account to your Keybase account.",
+
+  "prefill_url": "http://localhost/new-proof?kb=%{kb_username}&id=%{username}&token=%{sig_hash}&kb_ua=%{kb_ua}",
+
+  "profile_url": "http://localhost/user?id=%{username}",
+
+  "check_url": "http://localhost/keybase-proofs.json?id=%{username}",
+
+  "check_path": ["signatures"],
+
+  "contact": ["creatable@creatable.cafe"]
+}

@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+        <h3 class="title">
+            {{ user }}'s proof:
+        </h3>
+            <div class="box">
+                {{ proof }}
+            </div>
+        <h4>
+            <a href="https://discordapp.com/channels/658331377602920468/658331377602920471/{{ messageid }}">Click this link to verify this proof in Discord.</a>
+        </h4>
+        </div>
+    </div>
+</section>
+{% endblock %}
