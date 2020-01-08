@@ -10,6 +10,7 @@ async def run():
     global db
     db = await asyncpg.create_pool(user='creatable', database='keycord', host='127.0.0.1')
 
+print("Keycord by Creatable (https://github.com/Cr3atable)")
 bot = commands.Bot(command_prefix =".")
 app = Quart(__name__, static_url_path='')
 
